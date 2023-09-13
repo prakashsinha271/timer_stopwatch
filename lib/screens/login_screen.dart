@@ -53,9 +53,11 @@ class _LoginScreenState extends State<LoginScreen> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const TimerScreen()));
             });
-          } else if (state is UnauthenticatedState) {
-            /// TODO handel UnauthenticatedState
           }
+          /// TODO Handle UnauthenticatedState
+          // else if (state is UnauthenticatedState) {
+          //   return const SnackBar(content: Text(userNotFoundDescription));
+          // }
           return Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
